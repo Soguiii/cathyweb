@@ -394,3 +394,35 @@ nav {
     font-family: 'Inter', sans-serif;
     font-style: italic;
 }
+
+/* ===========================
+   ALBUM MODAL
+=========================== */
+.custom-modal {
+    background: rgba(30, 30, 30, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-desc {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.modal-date {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}

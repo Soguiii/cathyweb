@@ -36,104 +36,25 @@
         </div>
 
         <!-- PHOTO GRID -->
-        <div class="row g-4 mb-5">
+        <div class="row g-4 mb-5" id="photoGrid">
+            <!-- Cards will be dynamically injected here by script.js -->
+        </div>
+    </div>
 
-            <!-- ===================== -->
-            <!--  PHOTO CARD 1        -->
-            <!-- ===================== -->
-            <div class="col-sm-6 col-md-4">
-                <div class="album-card card">
-                    <div class="album-img-wrap">
-                        <img src="images/cathybg.jpg" alt="Photo 1" class="album-img">
-                    </div>
-                    <div class="album-info">
-                        <p class="album-desc">Cathy Art.</p>
-                        <span class="album-date">Date / Place</span>
-                    </div>
+    <!-- PHOTO MODAL -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content custom-modal">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="photoModalLabel">Photo Title</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Full Photo" class="img-fluid rounded mb-3" style="max-height: 60vh; object-fit: contain; width: 100%;">
+                    <p id="modalDescription" class="modal-desc">Lorem ipsum dolor sit amet...</p>
+                    <span id="modalDate" class="modal-date"></span>
                 </div>
             </div>
-
-            <!-- ===================== -->
-            <!--  PHOTO CARD 2        -->
-            <!-- ===================== -->
-            <div class="col-sm-6 col-md-4">
-                <div class="album-card card">
-                    <div class="album-img-wrap">
-                        <img src="images/cathyfinal.png" alt="Photo 2" class="album-img">
-                    </div>
-                    <div class="album-info">
-                        <p class="album-desc">Cathy Iconic pose.</p>
-                        <span class="album-date">Date / Place</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== -->
-            <!--  PHOTO CARD 3        -->
-            <!-- ===================== -->
-            <div class="col-sm-6 col-md-4">
-                <div class="album-card card">
-                    <div class="album-img-wrap">
-                        <img src="images/cathycry.jpg" alt="Photo 3" class="album-img">
-                    </div>
-                    <div class="album-info">
-                        <p class="album-desc">CATHYYYY CRYINGG.</p>
-                        <span class="album-date">Date / Place</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== -->
-            <!--  PHOTO CARD 4        -->
-            <!-- ===================== -->
-            <div class="col-sm-6 col-md-4">
-                <div class="album-card card">
-                    <div class="album-img-wrap">
-                        <img src="images/cathypfp.jpg" alt="Photo 4" class="album-img">
-                    </div>
-                    <div class="album-info">
-                        <p class="album-desc">Sleppy Cathyy.</p>
-                        <span class="album-date">Date / Place</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== -->
-            <!--  PHOTO CARD 5        -->
-            <!-- ===================== -->
-            <div class="col-sm-6 col-md-4">
-                <div class="album-card card">
-                    <div class="album-img-wrap">
-                        <img src="images/cathytruck.jpg" alt="Photo 5" class="album-img">
-                    </div>
-                    <div class="album-info">
-                        <p class="album-desc">Last moments of Cathy.</p>
-                        <span class="album-date">Date / Place</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== -->
-            <!--  PHOTO CARD 6        -->
-            <!-- ===================== -->
-            <div class="col-sm-6 col-md-4">
-                <div class="album-card card">
-                    <div class="album-img-wrap">
-                        <img src="images/cathyNmark.png" alt="Photo 6" class="album-img">
-                    </div>
-                    <div class="album-info">
-                        <p class="album-desc">Cathy and Mark store scene.</p>
-                        <span class="album-date">Date / Place</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ============================= -->
-            <!--  ADD MORE CARDS BELOW HERE   -->
-            <!--  Copy one block above,       -->
-            <!--  change src, desc, and date  -->
-            <!-- ============================= -->
-
         </div>
     </div>
 
@@ -143,5 +64,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
